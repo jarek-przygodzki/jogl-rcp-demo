@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="net.jarekprzygodzki.rcp.demo.Application">
+         </run>
+      </application>
+   </extension>
+   
+      <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="net.jarekprzygodzki.rcp.demo.Perspective"
+            id="net.jarekprzygodzki.rcp.demo.perspective">
+      </perspective>
+   </extension>
+      <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="net.jarekprzygodzki.rcp.demo.JOGLView"
+            id="net.jarekprzygodzki.rcp.demo.joglview"
+            name="JOGLView"
+            restorable="true">
+      </view>
+   </extension>
+      <extension
+            id="jogl_rcp_demo_product"
+            point="org.eclipse.core.runtime.products">
+         <product
+               application="jogl-rcp-demo.core.application"
+               name="JOGL RCP Demo">
+            <property
+                  name="appName"
+                  value="JOGL RCP Demo">
+            </property>
+         </product>
+      </extension>
+</plugin>

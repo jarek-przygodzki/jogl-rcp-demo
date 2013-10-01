@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="jogl-rcp-demo.feature"
+      label="JOGL RCP Demo Feature"
+      version="1.0.0.qualifier"
+      provider-name="Jarek Przygódzki"
+      os="linux,macosx,win32"
+      ws="cocoa,gtk,win32"
+      arch="x86,x86_64">
+
+   <description url="https://github.com/jarek-przygodzki/jogl-rcp-demo">
+      JOGL RCP Demo
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="org.jogamp.jogl.feature"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.osgi"/>
+   </requires>
+
+   <plugin
+         id="jogl-rcp-demo.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

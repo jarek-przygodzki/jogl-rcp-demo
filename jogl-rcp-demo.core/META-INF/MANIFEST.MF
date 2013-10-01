@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JOGL RCP Demo Core Plugin
+Bundle-SymbolicName: jogl-rcp-demo.core;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: net.jarekprzygodzki.rcp.demo.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ system.bundle,
+ org.jogamp.jogl
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Jarek Przygódzki
